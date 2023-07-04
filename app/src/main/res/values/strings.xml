@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">GrupDua</string>
+    <string name="group_name">Grup Dua</string>
+    <string name="app_name">Aplikasi Generator Angka</string>
+    <string name="input_minimum_number">Input Minimum Number :</string>
+    <string name="min">min</string>
+    <string name="input_maximum_number">Input Maximum Number :</string>
+    <string name="max">max</string>
+    <string name="hasil">Hasil Generator Angka :</string>
+    <string name="generate">Generate</string>
 </resources>
