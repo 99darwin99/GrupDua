@@ -16,20 +16,21 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        // Inisialisasi View
+        //Inisialisasi View
         View decorView = getWindow().getDecorView();
-        // Hide the status bar.
+        //Hide Status Bar
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
-        // Hide ActionBar
+        //Hide Action Bar
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
             }
-        }, 6000);
+        }, 5000);
     }
 }

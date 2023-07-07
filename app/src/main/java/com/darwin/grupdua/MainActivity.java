@@ -13,6 +13,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    // mengkoneksikan antara variabel xml di dalam java
     EditText et_min, et_max;
     Button b_generate;
     TextView tv_output;
@@ -35,9 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
+                // buat variabel tempMin dan tempMax
                 String tempMin, tempMax;
                 tempMin = et_min.getText().toString();
                 tempMax = et_max.getText().toString();
+
+                // cara menampilkan / menginisialisasi variabel min & max
                 if (!tempMin.equals("") && !tempMax.equals("")) {
                     min = Integer.parseInt(tempMin);
                     max = Integer.parseInt(tempMax);
